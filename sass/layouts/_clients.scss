@@ -1,0 +1,32 @@
+.section-clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.section-clients__list {
+    display: flex;
+    gap: 30px;
+}
+
+.section-clients__item {
+    width: calc((100% - 150px) / 6);
+    height: 92px;
+}
+
+.section-clients__link {
+    width: 100%;
+    height: 100%;
+    border: 1px solid $color-icon;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: $color-icon;
+    transition: border-color $anim-trans, fill $anim-trans;
+
+        &:hover,
+        &:focus {
+            border-color: $accent-color;
+            fill: $accent-color;
+        }
+}
