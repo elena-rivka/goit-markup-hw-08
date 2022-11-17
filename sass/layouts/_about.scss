@@ -1,20 +1,29 @@
 .special {
     padding-top: 60px;
     padding-bottom: 60px;
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
 }
 
 .special__list {
     display: flex;
     gap: 30px;
-    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 .special__item {
     // width: calc((100% - 90px) / 4);
     width: 100%;
+
     @media screen and (min-width: 768px) {
             width: calc((100% - 30px) / 2 );
         } 
+    @media screen and (min-width: 1200px) {
+        width: calc((100% - 90px) / 4);
+    }
 }
 
 .benefits {

@@ -96,6 +96,11 @@ body {
     max-width: 768px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+}
 
 .logo {
   margin-right: 93px;
@@ -431,11 +436,17 @@ body {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+@media screen and (min-width: 1200px) {
+  .special {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
 
 .special__list {
   display: flex;
   gap: 30px;
-  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .special__item {
@@ -444,6 +455,11 @@ body {
 @media screen and (min-width: 768px) {
   .special__item {
     width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .special__item {
+    width: calc((100% - 90px) / 4);
   }
 }
 
