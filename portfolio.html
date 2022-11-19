@@ -59,6 +59,60 @@
             >
           </li>
         </ul>
+        <button type="button" class="mob-btn" data-menu-open>
+          <svg class="mob-btn__icon" width="40" height="40">
+            <use href="./images/logo.svg#icon-menu-mob"></use>
+          </svg>
+        </button>
+      </div>
+      <!-- Мобільне меню -->
+      <div class="mob-menu is-hidden" data-menu>
+        <div class="mob-container">
+          <div class="mob__top">
+            <button type="button" class="mob-menu__btn-close" data-menu-close>
+              <svg class="mob-menu__icon" width="40" height="40">
+                <use href="./images/logo.svg#icon-mob-close"></use>
+              </svg>
+            </button>
+            <ul class="mob-menu__list list">
+              <li class="mob-menu__item">
+                <a
+                  class="mob-menu__link mob-menu__link--current link"
+                  href="./index.html"
+                  >Студія</a
+                >
+              </li>
+              <li class="mob-menu__item">
+                <a class="mob-menu__link link" href="./portfolio.html"
+                  >Портфоліо</a
+                >
+              </li>
+              <li class="mob-menu__item">
+                <a class="mob-menu__link link" href="#">Контакти</a>
+              </li>
+            </ul>
+          </div>
+          <div class="mob__bottom">
+            <ul class="mob-menu__block list">
+              <li class="mob-menu__nav">
+                <a class="mob-menu__tel link" href="tel:+380961111111"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+              <li class="mob-menu__nav">
+                <a class="mob-menu__mail link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+            <div class="socials-mob">
+              <a href="#" class="socials-mob__link link">Instagram</a>
+              <a href="#" class="socials-mob__link link">Twitter</a>
+              <a href="#" class="socials-mob__link link">Facebook</a>
+              <a href="#" class="socials-mob__link link">LinkedIn</a>
+            </div>
+          </div>
+        </div>
       </div>
     </header>
     <!--Портфоліо-->
@@ -89,19 +143,42 @@
             <li class="cards__item">
               <a href="" class="cards__links link">
                 <div class="cards__product">
-                  <img
-                    src="./images/img.jpg"
-                    alt="Технокряк"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio-1/img.jpg    1x,
+                        ./images/portfolio-1/img-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-1/img-tab.jpg    1x,
+                        ./images/portfolio-1/img-tab-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-1/img-mob.jpg    1x,
+                        ./images/portfolio-1/img-mob-2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      src="./images/portfolio-1/img-mob.jpg"
+                      alt="Технокряк"
+                      width="370"
+                      height="294"
+                    />
+                  </picture>
                   <p class="cards__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
                     отримати вичерпні відомості про компанію чи приватну особу.
                   </p>
                 </div>
-                <div class="cards__name">
+                <div class="cards__name cards__name--big">
                   <h2 class="cards__label">Технокряк</h2>
                   <p class="cards__description">Веб-сайт</p>
                 </div>
@@ -110,12 +187,35 @@
             <li class="cards__item">
               <a href="" class="cards__links link">
                 <div class="cards__product">
-                  <img
-                    src="./images/img2.jpg"
-                    alt="Постер New Orlean vs Golden Star"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio-2/img2.jpg    1x,
+                        ./images/portfolio-2/img2-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-2/img2-tab.jpg    1x,
+                        ./images/portfolio-2/img2-tab-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-2/img2-mob.jpg    1x,
+                        ./images/portfolio-2/img2-mob-2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      src="./images/portfolio-2/img2-mob.jpg"
+                      alt="Постер New Orlean vs Golden Star"
+                      width="370"
+                      height="294"
+                    />
+                  </picture>
                   <p class="cards__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -131,12 +231,35 @@
             <li class="cards__item">
               <a href="" class="cards__links link">
                 <div class="cards__product">
-                  <img
-                    src="./images/img3.jpg"
-                    alt="Ресторан Seafood"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio-3/img3.jpg    1x,
+                        ./images/portfolio-3/img3-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-3/img3-tab.jpg    1x,
+                        ./images/portfolio-3/img3-tab-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-3/img3-mob.jpg    1x,
+                        ./images/portfolio-3/img3-mob-2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      src="./images/portfolio-3/img3-mob.jpg"
+                      alt="Ресторан Seafood"
+                      width="370"
+                      height="294"
+                    />
+                  </picture>
                   <p class="cards__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -152,12 +275,35 @@
             <li class="cards__item">
               <a href="" class="cards__links link">
                 <div class="cards__product">
-                  <img
-                    src="./images/img4.jpg"
-                    alt="Проєкт Prime"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio-4/img4.jpg    1x,
+                        ./images/portfolio-4/img4-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-4/img4-tab.jpg    1x,
+                        ./images/portfolio-4/img4-tab-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-4/img4-mob.jpg    1x,
+                        ./images/portfolio-4/img4-mob-2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      src="./images/portfolio-4/img4-mob.jpg"
+                      alt="Проєкт Prime"
+                      width="370"
+                      height="294"
+                    />
+                  </picture>
                   <p class="cards__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -173,12 +319,35 @@
             <li class="cards__item">
               <a href="" class="cards__links link">
                 <div class="cards__product">
-                  <img
-                    src="./images/img5.jpg"
-                    alt="Проєкт Boxes"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio-5/img5.jpg    1x,
+                        ./images/portfolio-5/img5-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-5/img5-tab.jpg    1x,
+                        ./images/portfolio-5/img5-tab-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-5/img5-mob.jpg    1x,
+                        ./images/portfolio-5/img5-mob-2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      src="./images/portfolio-5/img5-mob.jpg"
+                      alt="Проєкт Boxes"
+                      width="370"
+                      height="294"
+                    />
+                  </picture>
                   <p class="cards__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -194,12 +363,35 @@
             <li class="cards__item">
               <a href="" class="cards__links link">
                 <div class="cards__product">
-                  <img
-                    src="./images/img6.jpg"
-                    alt="Inspiration has no Borders"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio-6/img6.jpg    1x,
+                        ./images/portfolio-6/img6-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-6/img6-tab.jpg    1x,
+                        ./images/portfolio-6/img6-tab-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-6/img6-mob.jpg    1x,
+                        ./images/portfolio-6/img6-mob-2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      src="./images/portfolio-6/img6-mob.jpg"
+                      alt="Inspiration has no Borders"
+                      width="370"
+                      height="294"
+                    />
+                  </picture>
                   <p class="cards__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -215,12 +407,35 @@
             <li class="cards__item">
               <a href="" class="cards__links link">
                 <div class="cards__product">
-                  <img
-                    src="./images/img7.jpg"
-                    alt="Видання Limited Edition"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio-7/img7.jpg    1x,
+                        ./images/portfolio-7/img7-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-7/img7-tab.jpg    1x,
+                        ./images/portfolio-7/img7-tab-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-7/img7-mob.jpg    1x,
+                        ./images/portfolio-7/img7-mob-2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      src="./images/portfolio-7/img7-mob.jpg"
+                      alt="Видання Limited Edition"
+                      width="370"
+                      height="294"
+                    />
+                  </picture>
                   <p class="cards__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -236,12 +451,35 @@
             <li class="cards__item">
               <a href="" class="cards__links link">
                 <div class="cards__product">
-                  <img
-                    src="./images/img8.jpg"
-                    alt="Проєкт LAB"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio-8/img8.jpg    1x,
+                        ./images/portfolio-8/img8-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-8/img8-tab.jpg    1x,
+                        ./images/portfolio-8/img8-tab-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-8/img8-mob.jpg    1x,
+                        ./images/portfolio-8/img8-mob-2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      src="./images/portfolio-8/img8-mob.jpg"
+                      alt="Проєкт LAB"
+                      width="370"
+                      height="294"
+                    />
+                  </picture>
                   <p class="cards__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -257,12 +495,35 @@
             <li class="cards__item">
               <a href="" class="cards__links link">
                 <div class="cards__product">
-                  <img
-                    src="./images/img9.jpg"
-                    alt="Growing Business"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio-9/img9.jpg    1x,
+                        ./images/portfolio-9/img9-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-9/img9-tab.jpg    1x,
+                        ./images/portfolio-9/img9-tab-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-9/img9-mob.jpg    1x,
+                        ./images/portfolio-9/img9-mob-2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      src="./images/portfolio-9/img9-mob.jpg"
+                      alt="Growing Business"
+                      width="370"
+                      height="294"
+                    />
+                  </picture>
                   <p class="cards__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -383,5 +644,6 @@
         </div>
       </footer>
     </div>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
