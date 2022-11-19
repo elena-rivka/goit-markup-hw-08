@@ -353,10 +353,36 @@ body {
   padding-top: 16px;
   padding-bottom: 16px;
 }
+@media screen and (min-width: 768px) {
+  .header {
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header {
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
+}
 
 .contact {
   display: none;
-  gap: 50px;
+}
+@media screen and (min-width: 768px) {
+  .contact {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contact {
+    display: flex;
+    gap: 50px;
+    flex-direction: inherit;
+  }
 }
 
 .header__nav {
@@ -373,7 +399,18 @@ body {
 .menu {
   display: none;
   gap: 50px;
-  margin-left: 93px;
+}
+@media screen and (min-width: 768px) {
+  .menu {
+    display: flex;
+    margin-left: 87px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .menu {
+    display: flex;
+    margin-left: 93px;
+  }
 }
 
 .menu__link {
@@ -412,7 +449,6 @@ body {
 .contact__link {
   display: flex;
   align-items: center;
-  justify-content: center;
   gap: 10px;
   color: #757575;
   fill: #757575;
@@ -425,6 +461,11 @@ body {
 .contact__link:hover, .contact__link:focus {
   color: #2196f3;
   fill: #2196f3;
+}
+@media screen and (min-width: 1200px) {
+  .contact__link {
+    justify-content: center;
+  }
 }
 
 .mob-menu {
@@ -448,6 +489,16 @@ body {
 .mob-btn {
   background-color: transparent;
   border: none;
+}
+@media screen and (min-width: 768px) {
+  .mob-btn {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .mob-btn {
+    display: none;
+  }
 }
 
 .mob-menu__btn-close {
@@ -652,6 +703,12 @@ body {
 
 .section-case {
   padding-bottom: 94px;
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .section-case {
+    display: block;
+  }
 }
 
 .section-case__list {

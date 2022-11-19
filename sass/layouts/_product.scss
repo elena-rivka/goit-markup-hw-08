@@ -1,5 +1,10 @@
 .section-case {
     padding-bottom: 94px;
+    display: none;
+
+    @include desktop {
+        display: block;
+    }
 }
 
 .section-case__list {
