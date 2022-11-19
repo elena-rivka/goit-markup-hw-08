@@ -9,12 +9,6 @@
     transition: opacity $anim-trans, visibility $anim-trans;
 }
 
-.backdrop.is-hidden {
-    opacity: 0;
-    pointer-events: none;
-    visibility: hidden;
-}
-
 .modal {
     position: absolute;
     top: 50%;

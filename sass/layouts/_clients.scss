@@ -1,16 +1,29 @@
 .section-clients {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    
+    @include desktop {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
 }
 
 .section-clients__list {
     display: flex;
     gap: 30px;
+    flex-wrap: wrap;
 }
 
 .section-clients__item {
-    width: calc((100% - 150px) / 6);
     height: 92px;
+    width: calc((100% - 30px) / 2);
+
+    @include tablet {
+        width: calc((100% - 60px) / 3);
+    }
+    @include desktop {
+        width: calc((100% - 150px) / 6);
+    }
 }
 
 .section-clients__link {

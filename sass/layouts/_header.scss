@@ -1,10 +1,13 @@
 .header {
-    padding-top: 24px;
-    padding-bottom: 25px;
+    // padding-top: 24px;
+    // padding-bottom: 25px;
+    padding-top: 16px;
+    padding-bottom: 16px;
 }
 
 .contact {
-    display: flex;
+    // display: flex;
+    display: none;
     gap: 50px;
 }
 
@@ -20,8 +23,10 @@
 }
 
 .menu {
-    display: flex;
+    // display: flex;
+    display: none;
     gap: 50px;
+    margin-left: 93px;
 }
 
 .menu__link {
@@ -85,6 +90,93 @@
             color: $accent-color;
             fill: $accent-color;
         }
+}
+
+// мобильное меню
+.mob-menu {
+    width: 100vw;
+    height: 100vh;
+    background-color: $primary-white-color;
+    top: 0;
+    position: fixed;
+    z-index: 1;
+    padding-top: 48px;
+    padding-bottom: 48px;
+
+    > .mob-container {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        overflow: auto;
+    }
+}
+
+.mob-btn {
+    background-color: transparent;
+    border: none;
+}
+
+.mob-menu__btn-close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background-color: transparent;
+    border: none;
+    fill: $color-logo;
+}
+.mob-menu__list {
+    margin-bottom: 34px;
+}
+.mob-menu__link {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    
+    color: $title-text-color;
+}
+
+.mob-menu__item:not(:last-child) {
+    margin-bottom: 32px;
+}
+.mob-menu__block {
+    margin-bottom: 64px;
+}
+.mob-menu__tel {
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    
+    color: $accent-color;
+}
+
+.mob-menu__mail {
+    display: block;
+    margin-top: 32px;
+
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.16;
+    letter-spacing: 0.02em;
+    
+    color: $primary-text-color;
+}
+.socials-mob {
+    display: flex;
+    gap: 20px;
+}
+.socials-mob__link {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+
+    color: $accent-color;
+
+    border: 1px solid rgba(33, 33, 33, 0.2);
+        transform: rotate(90deg);
 }
 
 // Полоска в хедере portfolio
