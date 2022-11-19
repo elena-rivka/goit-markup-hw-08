@@ -159,6 +159,11 @@
     background-color: transparent;
     border: none;
     fill: $color-logo;
+    transition: fill $anim-trans;
+
+    &:hover, &:focus {
+        fill: $accent-color;
+    }
 }
 
 .mob-menu__list {
@@ -170,8 +175,9 @@
     font-size: 40px;
     line-height: 1.17;
     letter-spacing: 0.02em;
-    
     color: $title-text-color;
+    transition: color $anim-trans;
+
     &:hover, &:focus {
         color: $accent-color;
     }
@@ -192,8 +198,9 @@
     font-size: 34px;
     line-height: 1.17;
     letter-spacing: 0.02em;
-    
     color: $primary-text-color;
+    transition: color $anim-trans;
+
         &:hover,
         &:focus {
             color: $accent-color;
@@ -210,6 +217,8 @@
     letter-spacing: 0.02em;
     
     color: $primary-text-color;
+    transition: color $anim-trans;
+
         &:hover,
         &:focus {
             color: $accent-color;
@@ -226,9 +235,14 @@
     letter-spacing: 0.02em;
 
     color: $accent-color;
+    transition: color $anim-trans;
+
         &:not(:last-child) {
             border-right: 1px solid rgba(33, 33, 33, 0.2);
             padding-right: 10px;
+        }
+        &:hover, &:focus {
+        color: $primary-text-color;
         }
 }
 
